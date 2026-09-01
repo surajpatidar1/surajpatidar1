@@ -21,9 +21,6 @@
   </a>
 </p>
 
-<!-- Profile Views -->
-<img src="https://komarev.com/ghpvc/?username=surajpatidar1&style=for-the-badge&color=7C3AED&label=PROFILE+VIEWS" alt="Profile Views"/>
-
 </div>
 
 ---
