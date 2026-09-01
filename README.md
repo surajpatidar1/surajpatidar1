@@ -3,10 +3,6 @@
 <!-- Animated Header -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Suraj%20Patidar&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Full%20Stack%20Developer%20%7C%20Open%20Source%20Contributor&descAlignY=55&descSize=16" width="100%"/>
 
-<!-- Typing SVG -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=false&width=600&lines=Building+scalable+full+stack+apps+%F0%9F%9A%80;React+%7C+Next.js+%7C+Node.js+%7C+NestJS;Open+source+contributor+%F0%9F%8C%9F;Always+learning%2C+always+growing+%F0%9F%92%AA" alt="Typing SVG" />
-</a>
 
 <br/>
 
@@ -35,18 +31,30 @@
 ## 🧑‍💻 About Me
 
 ```typescript
-const suraj = {
-  role:         "Full Stack Developer",
-  location:     "India 🇮🇳",
-  languages:    ["TypeScript", "JavaScript"],
-  frontend:     ["React", "Next.js", "Redux Toolkit", "Tailwind CSS"],
-  backend:      ["Node.js", "Express.js", "NestJS"],
-  databases:    ["MongoDB", "PostgreSQL", "MySQL"],
-  orm:          ["Prisma"],
-  tools:        ["Git", "Postman", "Vercel", "Render"],
-  currentFocus: "Building production-ready full-stack applications",
-  funFact:      "I turn ☕ into clean, scalable code",
-};
+@Injectable()
+export class SurajPatidar implements Developer {
+
+  readonly name     = 'Suraj Patidar';
+  readonly role     = 'Full Stack Developer';
+  readonly location = 'India 🇮🇳';
+
+  readonly skills = {
+    languages : ['TypeScript', 'JavaScript'],
+    frontend  : ['React', 'Next.js', 'Redux Toolkit', 'Tailwind CSS'],
+    backend   : ['Node.js', 'Express.js', 'NestJS'],
+    databases : ['MongoDB', 'PostgreSQL', 'MySQL'],
+    orm       : ['Prisma'],
+    tools     : ['Git', 'Postman', 'Vercel', 'Render'],
+  };
+
+  currentFocus(): string {
+    return '🚀 Building production-ready full-stack applications';
+  }
+
+  funFact(): string {
+    return '☕ I turn coffee into clean, scalable code';
+  }
+}
 ```
 
 ---
@@ -130,15 +138,13 @@ const suraj = {
   <table>
     <tr>
       <td align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=surajpatidar1&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7C3AED&icon_color=7C3AED&text_color=c9d1d9&count_private=true" alt="GitHub Stats" height="180"/>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=surajpatidar1&theme=tokyonight" alt="GitHub Stats" height="180"/>
       </td>
       <td align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=surajpatidar1&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7C3AED&text_color=c9d1d9" alt="Top Languages" height="180"/>
+        <img src="https://streak-stats.demolab.com/?user=surajpatidar1&theme=tokyonight&hide_border=true&background=0D1117&stroke=7C3AED&ring=7C3AED&fire=FF6B6B&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=7C3AED&sideLabels=7C3AED&dates=c9d1d9" alt="GitHub Streak" height="180"/>
       </td>
     </tr>
   </table>
-  <br/>
-  <img src="https://streak-stats.demolab.com/?user=surajpatidar1&theme=tokyonight&hide_border=true&background=0D1117&stroke=7C3AED&ring=7C3AED&fire=FF6B6B&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=7C3AED&sideLabels=7C3AED&dates=c9d1d9" alt="GitHub Streak" width="70%"/>
 </div>
 
 ---
@@ -176,6 +182,8 @@ const suraj = {
     </tr>
   </table>
 </div>
+
+
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
